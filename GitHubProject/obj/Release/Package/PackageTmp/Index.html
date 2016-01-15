@@ -1,0 +1,129 @@
+﻿<html ng-app="MyModule">
+
+<head title="">
+    <style type="text/css">
+        #tblContainer, #tblcollections, #tblCRUD, td {
+            border: 1px solid black;
+        }
+
+        th {
+            background-color: white;
+        }
+
+        #dvcollection {
+            height: 500px;
+            overflow-y: scroll;
+        }
+    </style>
+
+</head>
+
+<body ng-controller="MyController">
+    <h2>Web API Testing</h2>
+    <div>
+        <table id="tblCRUD">
+            <tr>
+                <td>
+                    <span>Id</span>
+                </td>
+                <td>
+                    <input type="text" id="StudentId" readonly="readonly" ng-model="StudentId" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>Name</span>
+                </td>
+                <td>
+                    <input type="text" id="StudentName" required ng-model="StudentName" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>Roll</span>
+                </td>
+                <td>
+                    <input type="text" id="StudentRoll" required ng-model="StudentRoll" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>Class</span>
+                </td>
+                <td>
+                    <input type="text" id="StudentClass" required ng-model="StudentClass" />
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <span>Address</span>
+                </td>
+                <td>
+                    <input type="text" id="StudentAddress" required ng-model="StudentAddress" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>MobileNo</span>
+                </td>
+                <td>
+                    <input type="text" id="StudentMobile" required ng-model="StudentMobile" />
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="button" id="new" value="New" ng-click="clear()" />
+                </td>
+                <td>
+                    <input type="button" id="save" value="Save" ng-click="save()" />
+                </td>
+                <td>
+                    <input type="button" id="delete" value="Delete" ng-click="delete()" />
+                </td>
+            </tr>
+        </table>
+        <div>{{Message}}</div>
+    </div>
+    <table id="tblContainer" >
+        <tr>           
+            <td>
+                <div id="dvcollection">
+                    <table id="tblcollections">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Id</th>
+                                <th>Name</th>
+                                <th>Roll</th>
+                                <th>Class</th>
+                                <th>Address</th>
+                                <th>MobileNo</th>
+                            </tr>
+                        </thead>
+                        <tbody ng-repeat="student in Students">
+                            <tr>
+                                <td><input type="button" value="GetDetails" ng-click="get(student)" /></td>
+                                <td> <span>{{student.Id}}</span></td>
+                                <td> <span>{{student.Name}}</span></td>
+                                <td> <span>{{student.Roll}}</span></td>
+                                <td> <span>{{student.Class}}</span></td>
+                                <td> <span>{{student.Address}}</span></td>
+                                <td> <span>{{student.MobileNo}}</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+<script src="Scripts/angular.js"></script>
+<script src="Scripts/angular-route.js"></script>
+<script src="Scripts/Myscript/Module.js"></script>
+<script src="Scripts/Myscript/Controller.js"></script>
+<script src="Scripts/Myscript/Service.js"></script>
+
+

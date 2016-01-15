@@ -26,3 +26,7 @@ c:\users\tanvir\documents\visual studio 2015\Projects\GitHubProject\GitHubProjec
 c:\users\tanvir\documents\visual studio 2015\Projects\GitHubProject\GitHubProject\obj\Debug\GitHubProject.csprojResolveAssemblyReference.cache
 c:\users\tanvir\documents\visual studio 2015\Projects\GitHubProject\GitHubProject\obj\Debug\GitHubProject.dll
 c:\users\tanvir\documents\visual studio 2015\Projects\GitHubProject\GitHubProject\obj\Debug\GitHubProject.pdb
+C:\Users\tanvir\Documents\Visual Studio 2015\Projects\GitHubProject\GitHubProject\bin\EntityFramework.dll
+C:\Users\tanvir\Documents\Visual Studio 2015\Projects\GitHubProject\GitHubProject\bin\EntityFramework.SqlServer.dll
+C:\Users\tanvir\Documents\Visual Studio 2015\Projects\GitHubProject\GitHubProject\bin\EntityFramework.xml
+C:\Users\tanvir\Documents\Visual Studio 2015\Projects\GitHubProject\GitHubProject\bin\EntityFramework.SqlServer.xml
